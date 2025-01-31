@@ -1,0 +1,9 @@
+// VerilogA for reram_test, reram_module, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module reram_module;
+
+
+endmodule
