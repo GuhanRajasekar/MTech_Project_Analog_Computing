@@ -1,0 +1,7 @@
+DAC resources : 
+
+1). https://www.analog.com/media/en/training-seminars/design-handbooks/CMOS-DAC-Application-Guide/Chapter2.pdf
+
+2). https://ieeexplore.ieee.org/abstract/document/5458036 (refer this first)
+
+3). https://ieeexplore.ieee.org/abstract/document/4258307 ( look for the image titled CMOS based DAC in this paper that is very similar to Saptarshi's design)
