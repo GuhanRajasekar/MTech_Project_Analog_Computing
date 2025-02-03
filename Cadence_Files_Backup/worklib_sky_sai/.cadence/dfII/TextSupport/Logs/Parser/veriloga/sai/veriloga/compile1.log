@@ -1,0 +1,17 @@
+Reading file:  /home/saik/worklib_sky/reram/sai/Practice/veriloga/veriloga.va
+
+Warning from spectre during AHDL compile.
+    WARNING (VACOMP-1087):
+        "/home/saik/worklib_sky/reram/sai/Practice/veriloga/veriloga.va", line
+        3: Encountered Verilog `timescale directive. Verilog-AMS requires a
+        `default_transition directive to set the default transition or a local
+        transition setting for transition or Z-transform filters. While the
+        Verilog-A language will use `timescale in the absence of a
+        `default_transition directive, you should always use
+        `default_transition to set the default transition time for transition
+        or Z-transform (zi_*) filters.
+
+Reading file: 
+        /opt/Cadence_Installs/SPECTRE211/tools.lnx86/spectre/etc/ahdl/constants.vams
+Reading file: 
+        /opt/Cadence_Installs/SPECTRE211/tools.lnx86/spectre/etc/ahdl/disciplines.vams

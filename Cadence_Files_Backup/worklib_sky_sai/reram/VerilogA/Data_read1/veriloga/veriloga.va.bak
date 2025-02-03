@@ -1,0 +1,103 @@
+// VerilogA for VerilogA, Data_read1, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module Data_read1( VDDI, D_p0, D_p1, D_p2, D_p3, D_p4, D_p5, D_p6, D_p7,D_n0, D_n1, D_n2, D_n3, D_n4, D_n5, D_n6, D_n7 );
+input VDDI;
+electrical VDDI;
+
+
+ 	output  D_p0, D_p1, D_p2, D_p3, D_p4, D_p5, D_p6, D_p7 ;  // 4 elements, each an 8-bit vector
+    output  D_n0, D_n1, D_n2, D_n3, D_n4, D_n5, D_n6, D_n7 ;  // 4 elements, each an 8-bit vector
+    electrical  D_p0, D_p1, D_p2, D_p3, D_p4, D_p5, D_p6, D_p7 ;  // 4 elements, each an 8-bit vector
+    electrical D_n0, D_n1, D_n2, D_n3, D_n4, D_n5, D_n6, D_n7 ;  // 4 elements, each an 8-bit vector
+
+ integer file, status;
+  integer binary_data_array[0:7]; // Array to store up to 16 binary numbers
+  integer binary_data;             // Variable to hold each binary line
+  integer is_file_open; 
+	genvar i,j, index;
+  analog begin
+
+	if (V(VDDI)>1) begin
+		for (index = 0; index < 8; index = index + 1) begin
+        binary_data_array[index] = 0;
+      end
+
+      // Open the file in read mode
+     	 file = $fopen("/home/saik/worklib_sky/reram/VerilogA/Data_read1/data.txt", "r");
+      	if (file == 0) begin
+        		$strobe("Error: Could not open file data.txt.");
+       		 is_file_open = 0; // Set the flag to indicate failure
+      	end else begin
+        		is_file_open = 1; // Set the flag to indicate success
+     	end
+
+      	if (is_file_open) begin
+        		index = 0;
+       		while (!$feof(file) && index < 8) begin
+          		status = $fscanf(file, "%b\n", binary_data);
+          		if (status > 0) begin
+            			binary_data_array[index] = binary_data;
+           			 $strobe("Stored binary_data_array[%0d] = %b", index, binary_data);
+           			 index = index + 1;
+         		end else begin
+            			$strobe("Error reading binary data");
+           			break;
+          		end
+        		end
+        $fclose(file);
+        $strobe("Finished reading data.");
+      	end
+		
+	for (i = 0; i < 1; i= i + 1) begin //: row_loop
+        //        for (j = 0; j < 8; j = j + 1) begin: bit_loop 
+				if (	((binary_data_array[i] >> 7) & 1) ==1) begin 
+					 V(D_p0[i]) <+ 0 ; // Assign bits to D_p
+					V(D_p1[i]) <+ 0 ; // Assign bits to D_p
+					V(D_p2[i]) <+ 0 ; // Assign bits to D_p
+					V(D_p3[i]) <+ 0 ; // Assign bits to D_p
+					 V(D_p4[i]) <+ 0 ; // Assign bits to D_p
+					V(D_p5[i]) <+ 0 ; // Assign bits to D_p
+					V(D_p6[i]) <+ 0 ; // Assign bits to D_p
+					V(D_p7[i]) <+ 0 ; // Assign bits to D_p
+
+            			  V(D_n0[i]) <+ (binary_data_array[i] >> 0) & 1; // Assign bits to D_n
+            			  V(D_n1[i]) <+ (binary_data_array[i] >> 1) & 1; // Assign bits to D_n
+            			  V(D_n2[i]) <+ (binary_data_array[i] >> 2) & 1; // Assign bits to D_n
+            			  V(D_n3[i]) <+ (binary_data_array[i] >> 3) & 1; // Assign bits to D_n
+            			  V(D_n4[i]) <+ (binary_data_array[i] >> 4) & 1; // Assign bits to D_n
+            			  V(D_n5[i]) <+ (binary_data_array[i] >> 5) & 1; // Assign bits to D_n
+            			  V(D_n6[i]) <+ (binary_data_array[i] >> 6) & 1; // Assign bits to D_n
+            			  V(D_n7[i]) <+ (binary_data_array[i] >> 7) & 1; // Assign bits to D_n
+				//	$strobe("Stored binary_data_array_P[%0d] = %b%b%b%b%b%b%b%b", ibdex, binary_data);
+			//		$strobe("Stored binary_data_array_N[%0d] = %b%b%b%b%b%b%b%b", i, binary_data);
+				end else begin 
+					 V(D_n0[i]) <+ 0 ; // Assign bits to D_n
+					V(D_n1[i]) <+ 0 ; // Assign bits to D_n
+					V(D_n2[i]) <+ 0 ; // Assign bits to D_n
+					V(D_n3[i]) <+ 0 ; // Assign bits to D_n
+					 V(D_n4[i]) <+ 0 ; // Assign bits to D_n
+					V(D_n5[i]) <+ 0 ; // Assign bits to D_n
+					V(D_n6[i]) <+ 0 ; // Assign bits to D_n
+					V(D_n7[i]) <+ 0 ; // Assign bits to D_n
+
+            			  V(D_p0[i]) <+ (binary_data_array[i] >> 0) & 1; // Assign bits to D_p
+            			  V(D_p1[i]) <+ (binary_data_array[i] >> 1) & 1; // Assign bits to D_p
+            			  V(D_p2[i]) <+ (binary_data_array[i] >> 2) & 1; // Assign bits to D_p
+            			  V(D_p3[i]) <+ (binary_data_array[i] >> 3) & 1; // Assign bits to D_p
+            			  V(D_p4[i]) <+ (binary_data_array[i] >> 4) & 1; // Assign bits to D_p
+            			  V(D_p5[i]) <+ (binary_data_array[i] >> 5) & 1; // Assign bits to D_p
+            			  V(D_p6[i]) <+ (binary_data_array[i] >> 6) & 1; // Assign bits to D_p
+            			  V(D_p7[i]) <+ (binary_data_array[i] >> 7) & 1; // Assign bits to D_p
+	
+				end
+			
+		//		end
+			end
+
+		
+	end
+end
+endmodule

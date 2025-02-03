@@ -1,0 +1,74 @@
+ncvlog(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+DEFINE connectLib	$AMSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+ncvlog: *W,DLCVAR (./cds.lib,5): cds.lib Invalid environment variable ''.
+TOOL:	ncvlog(64)	15.20-s086: Started on Jan 11, 2025 at 21:20:30 IST
+ncvlog
+    -use5x
+    -SPECIFICUNIT pwl_voltage_source1
+    -zparse /tmp/vamsZparr48751
+    -NOWARN DLNOHV
+    -work sai
+    -view verilogams
+    -nostdout
+    -logfile /home/saik/worklib_sky/.cadence/dfII/TextSupport/Logs/Parser/verilogams/sai/verilogams/compile0.log
+    -messages
+    -ams
+    -cdslib /home/saik/worklib_sky/cds.lib
+    /home/saik/worklib_sky/reram/sai/pwl_voltage_source1/verilogams/verilog.vams
+
+file: /home/saik/worklib_sky/reram/sai/pwl_voltage_source1/verilogams/verilog.vams
+  parameter real V[0:1] = {0, 5};       // Voltage levels
+                          |
+ncvlog: *E,EXPASN (/home/saik/worklib_sky/reram/sai/pwl_voltage_source1/verilogams/verilog.vams,10|26): Illegal initialization expression for parameter array [3.4].
+  parameter real V[0:1] = {0, 5};       // Voltage levels
+                            |
+ncvlog: *E,EXPSMC (/home/saik/worklib_sky/reram/sai/pwl_voltage_source1/verilogams/verilog.vams,10|28): expecting a semicolon (';') [3.10(IEEE)].
+  parameter real T[0:1] = {0, 10e-6};   // Time points
+                          |
+ncvlog: *E,EXPASN (/home/saik/worklib_sky/reram/sai/pwl_voltage_source1/verilogams/verilog.vams,11|26): Illegal initialization expression for parameter array [3.4].
+  parameter real T[0:1] = {0, 10e-6};   // Time points
+                            |
+ncvlog: *E,EXPSMC (/home/saik/worklib_sky/reram/sai/pwl_voltage_source1/verilogams/verilog.vams,11|28): expecting a semicolon (';') [3.10(IEEE)].
+    real v_out;
+       |
+ncvlog: *E,BADDCL (/home/saik/worklib_sky/reram/sai/pwl_voltage_source1/verilogams/verilog.vams,15|7): identify declaration while expecting a statement.
+    v_out = V[0];
+          |
+ncvlog: *E,EXPLPA (/home/saik/worklib_sky/reram/sai/pwl_voltage_source1/verilogams/verilog.vams,18|10): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+    v_out = V[0];
+               |
+ncvlog: *E,EXPCOL (/home/saik/worklib_sky/reram/sai/pwl_voltage_source1/verilogams/verilog.vams,18|15): expecting a colon (':') [3.2.1][3.8(IEEE)].
+    v_out = V[0];
+                |
+ncvlog: *E,EXPLPA (/home/saik/worklib_sky/reram/sai/pwl_voltage_source1/verilogams/verilog.vams,18|16): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+        v_out = V[i] + (V[i + 1] - V[i]) * (($abstime - T[i]) / (T[i + 1] - T[i]));
+              |
+ncvlog: *E,EXPLPA (/home/saik/worklib_sky/reram/sai/pwl_voltage_source1/verilogams/verilog.vams,22|14): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+        v_out = V[i] + (V[i + 1] - V[i]) * (($abstime - T[i]) / (T[i + 1] - T[i]));
+                   |
+ncvlog: *E,EXPCOL (/home/saik/worklib_sky/reram/sai/pwl_voltage_source1/verilogams/verilog.vams,22|19): expecting a colon (':') [3.2.1][3.8(IEEE)].
+        v_out = V[i] + (V[i + 1] - V[i]) * (($abstime - T[i]) / (T[i + 1] - T[i]));
+                     |
+ncvlog: *E,EXPLPA (/home/saik/worklib_sky/reram/sai/pwl_voltage_source1/verilogams/verilog.vams,22|21): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+        v_out = V[i] + (V[i + 1] - V[i]) * (($abstime - T[i]) / (T[i + 1] - T[i]));
+                                         |
+ncvlog: *E,EXPSMC (/home/saik/worklib_sky/reram/sai/pwl_voltage_source1/verilogams/verilog.vams,22|41): expecting a semicolon (';') [12.1.2][7.1(IEEE)].
+    if ($abstime >= T[size - 1]) v_out = V[size - 1];
+                                       |
+ncvlog: *E,EXPLPA (/home/saik/worklib_sky/reram/sai/pwl_voltage_source1/verilogams/verilog.vams,26|39): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+    if ($abstime >= T[size - 1]) v_out = V[size - 1];
+                                                   |
+ncvlog: *E,EXPCOL (/home/saik/worklib_sky/reram/sai/pwl_voltage_source1/verilogams/verilog.vams,26|51): expecting a colon (':') [3.2.1][3.8(IEEE)].
+    if ($abstime >= T[size - 1]) v_out = V[size - 1];
+                                                    |
+ncvlog: *E,EXPLPA (/home/saik/worklib_sky/reram/sai/pwl_voltage_source1/verilogams/verilog.vams,26|52): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+    (potential(p) - potential(n)) <+ v_out;
+    |
+ncvlog: *E,EXPENM (/home/saik/worklib_sky/reram/sai/pwl_voltage_source1/verilogams/verilog.vams,29|4): expecting the keyword 'endmodule' [12.1(IEEE)].
+	module sai.pwl_voltage_source1:verilogams
+		errors: 16, warnings: 0
+	 writing out DPL output:
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	ncvlog(64)	15.20-s086: Exiting on Jan 11, 2025 at 21:20:30 IST  (total: 00:00:00)

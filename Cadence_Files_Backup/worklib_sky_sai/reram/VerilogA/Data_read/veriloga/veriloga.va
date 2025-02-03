@@ -1,0 +1,90 @@
+// VerilogA for VerilogA, Data_read, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module Data_read( VDDI, D_p, D_n);
+input VDDI;
+electrical VDDI;
+
+//output [7:0] D_p[0:3], D_n[0:3];
+//electrical [7:0] D_p[0:3], D_n[0:3];
+
+
+ 	output [55:0] D_p;  // 4 elements, each an 8-bit vector
+    output [55:0] D_n;  // 4 elements, each an 8-bit vector
+    electrical [55:0] D_p;  // 4 elements, each an 8-bit vector
+    electrical [55:0] D_n;  // 4 elements, each an 8-bit vector
+
+ integer file, status,i;
+  integer binary_data_array[0:7]; // Array to store up to 16 binary numbers
+  integer binary_data;             // Variable to hold each binary line
+  integer is_file_open; 
+	genvar j, index;
+  analog begin
+
+	if (V(VDDI)>1) begin
+		for (index = 0; index < 8; index = index + 1) begin
+        binary_data_array[index] = 0;
+      end
+
+      // Open the file in read mode
+     	 file = $fopen("/home/saik/worklib_sky/reram/sai/data_read1/data.txt", "r");
+      	if (file == 0) begin
+        		$strobe("Error: Could not open file data.txt.");
+       		 is_file_open = 0; // Set the flag to indicate failure
+      	end else begin
+        		is_file_open = 1; // Set the flag to indicate success
+     	end
+
+      	if (is_file_open) begin
+        		index = 0;
+       		while (!$feof(file) && index < 16) begin
+          		status = $fscanf(file, "%b\n", binary_data);
+          		if (status > 0) begin
+            			binary_data_array[index] = binary_data;
+           			 $strobe("Stored binary_data_array[%0d] = %b", index, binary_data);
+           			 index = index + 1;
+         		end else begin
+            			$strobe("Error reading binary data");
+           			break;
+          		end
+        		end
+        $fclose(file);
+        $strobe("Finished reading data.");
+      	end
+	
+      //  generate// i (3,0) begin
+		//	generate j (7,0) begin
+			for (index = 0; index < 8; index = index + 1) begin //: row_loop
+                for (j = 0; j < 8; j = j + 1) begin: bit_loop 
+	//			integer i;
+				if (i<56)
+				//begin : assign_bits
+                // integer	i = index * 8 + j; 
+				if (	((binary_data_array[index] >> 7) & 1) ==1) begin 
+					 V(D_p[i]) <+ 0 ; // Assign bits to D_p
+            			  V(D_n[i]) <+ (binary_data_array[index] >> j) & 1; // Assign bits to D_n
+				end else begin 
+					 V(D_p[i]) <+ (binary_data_array[index] >> j) & 1; // Assign bits to D_p
+            			  V(D_n[i]) <+ 0 ; // Assign bits to D_n
+				end
+			//	end
+				i=i+1;
+				end
+			end
+    //        for (i = 0; i < 1024; i = i + 1) begin : assign_bits
+    //            D_p[i] = (binary_data_array[i] >> 1) & 1; // Assign bits to D_p
+    ///            D_n[i] = (binary_data_array[i] >> 0) & 1; // Assign bits to D_n
+     //       end
+      //  endgenerate
+	
+	//	D_p[0]= (binary_data_array[1] >> 1) & 1;
+	end
+	
+end
+
+
+
+
+endmodule

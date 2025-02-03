@@ -1,0 +1,16 @@
+Reading file:  /home/saik/worklib_sky/reram/sai/bit8/veriloga/veriloga.va
+Reading file: 
+        /opt/Cadence_Installs/SPECTRE211/tools.lnx86/spectre/etc/ahdl/constants.vams
+Reading file: 
+        /opt/Cadence_Installs/SPECTRE211/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+
+Error found by spectre during AHDL compile.
+    ERROR (VACOMP-2212): "in=<<--?  (binary_data_array[1] >> 1) & 1;"
+        "/home/saik/worklib_sky/reram/sai/bit8/veriloga/veriloga.va", line 285:
+        Encountered undeclared identifier: in. Declare the identifier before
+        using it.
+    ERROR (VACOMP-2259): "pwl<<--?  uut
+        (.in(binary_data_array[0]),.VDDI(VDDI),.Vwr(Vwr[0]),.Vwl(Vwl[0]),.Vs(Vs[0]),.Vwl1(Vwl1[0]),.Vwg(Vwg[0]),.Vwg1(Vwg1[0]),.Vsl(Vsl[0]),.Vsl1(Vsl1[0])
+        );"
+        "/home/saik/worklib_sky/reram/sai/bit8/veriloga/veriloga.va", line 289:
+        syntax error.

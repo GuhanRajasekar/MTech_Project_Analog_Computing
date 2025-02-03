@@ -1,0 +1,385 @@
+\o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 01/17/2024 18:07 (csvcm36c-7) $
+\o Sub version:		sub-version  s353 
+\o Arguments:		-mpssession virtuoso202189 -mpshost neuronics.c2sCAT1MEITY.iisc.ac.in 
+\o Working Directory:	neuronics.c2sCAT1MEITY.iisc.ac.in:/home/saik/worklib_sky
+\o 64-bit offsets
+\o Qt version: 		5.9.1
+\o Log file is "/home/saik/worklib_sky/libManager.log".
+\o Opening libManager window.
+\a nrResizeWindow(cdsLibManager list(9 38 1604 881))
+\a nrSetCurrentWindow(cdsLibManager)
+\o MPS virtuoso types registered: 65
+\o changeWorkingDir("/home/saik/worklib_sky") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o MPS service: map window
+\o Library Manager customization server connected.
+\w Warning: LIB basic from File /home/saik/worklib_sky/cds.lib Line 3 redefines
+\w LIB basic from File /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\w Insert UNDEFINE basic
+\w before DEFINE basic
+\w     in /home/saik/worklib_sky/cds.lib
+\w Or remove or comment out DEFINE basic
+\w     in /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB analogLib from File /home/saik/worklib_sky/cds.lib Line 4 redefines
+\w LIB analogLib from File /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\w Insert UNDEFINE analogLib
+\w before DEFINE analogLib
+\w     in /home/saik/worklib_sky/cds.lib
+\w Or remove or comment out DEFINE analogLib
+\w     in /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB connectLib from File /home/saik/worklib_sky/cds.lib Line 5 redefines
+\w LIB connectLib from File /opt/Cadence_Installs/INCISIVE152/tools.lnx86/affirma_ams/etc/connect_lib/cds.lib
+\w Insert UNDEFINE connectLib
+\w before DEFINE connectLib
+\w     in /home/saik/worklib_sky/cds.lib
+\w Or remove or comment out DEFINE connectLib
+\w     in /opt/Cadence_Installs/INCISIVE152/tools.lnx86/affirma_ams/etc/connect_lib/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB analogLib from File /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib Line 1 redefines
+\w LIB analogLib from File /home/saik/worklib_sky/cds.lib
+\w Insert UNDEFINE analogLib
+\w before DEFINE analogLib
+\w     in /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib
+\w Or remove or comment out DEFINE analogLib
+\w     in /home/saik/worklib_sky/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB basic from File /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib Line 2 redefines
+\w LIB basic from File /home/saik/worklib_sky/cds.lib
+\w Insert UNDEFINE basic
+\w before DEFINE basic
+\w     in /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib
+\w Or remove or comment out DEFINE basic
+\w     in /home/saik/worklib_sky/cds.lib
+\w to suppress this warning message.
+\w Warning: The directory: '/home/saik/worklib_sky/$AMSHOME/tools/affirma_ams/etc/connect_lib/connectLib' does not exist
+\w 	but was defined in libFile '/home/saik/worklib_sky/cds.lib' for Lib 'connectLib'.
+\a cdsLibManager->libListBox->value = "VerilogA"
+\a cdsLibManager->libLineEdit->value = "VerilogA"
+\a cdsLibManager->cellListBox->value = "PWL0"
+\a cdsLibManager->cellLineEdit->value = "PWL0"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 0 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\w Warning: LIB basic from File /home/saik/worklib_sky/cds.lib Line 3 redefines
+\w LIB basic from File /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\w Insert UNDEFINE basic
+\w before DEFINE basic
+\w     in /home/saik/worklib_sky/cds.lib
+\w Or remove or comment out DEFINE basic
+\w     in /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB analogLib from File /home/saik/worklib_sky/cds.lib Line 4 redefines
+\w LIB analogLib from File /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\w Insert UNDEFINE analogLib
+\w before DEFINE analogLib
+\w     in /home/saik/worklib_sky/cds.lib
+\w Or remove or comment out DEFINE analogLib
+\w     in /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB connectLib from File /home/saik/worklib_sky/cds.lib Line 5 redefines
+\w LIB connectLib from File /opt/Cadence_Installs/INCISIVE152/tools.lnx86/affirma_ams/etc/connect_lib/cds.lib
+\w Insert UNDEFINE connectLib
+\w before DEFINE connectLib
+\w     in /home/saik/worklib_sky/cds.lib
+\w Or remove or comment out DEFINE connectLib
+\w     in /opt/Cadence_Installs/INCISIVE152/tools.lnx86/affirma_ams/etc/connect_lib/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB analogLib from File /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib Line 1 redefines
+\w LIB analogLib from File /home/saik/worklib_sky/cds.lib
+\w Insert UNDEFINE analogLib
+\w before DEFINE analogLib
+\w     in /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib
+\w Or remove or comment out DEFINE analogLib
+\w     in /home/saik/worklib_sky/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB basic from File /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib Line 2 redefines
+\w LIB basic from File /home/saik/worklib_sky/cds.lib
+\w Insert UNDEFINE basic
+\w before DEFINE basic
+\w     in /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib
+\w Or remove or comment out DEFINE basic
+\w     in /home/saik/worklib_sky/cds.lib
+\w to suppress this warning message.
+\w Warning: The directory: '/home/saik/worklib_sky/$AMSHOME/tools/affirma_ams/etc/connect_lib/connectLib' does not exist
+\w 	but was defined in libFile '/home/saik/worklib_sky/cds.lib' for Lib 'connectLib'.
+\a cdsLibManager->libListBox->value = "VerilogA"
+\a cdsLibManager->libLineEdit->value = "VerilogA"
+\a cdsLibManager->cellListBox->value = "PWL0"
+\a cdsLibManager->cellLineEdit->value = "PWL0"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a lmgrLogShowPopup("mainListPopup2" 44 8 2 "symbol")
+\a cdsLibManager->editDeleteButton->value = t
+\a deleteForm->deleteFilterEdit->value = "*"
+\a deleteForm->notDeleteFilterEdit->value = "*"
+\a nrSetWindowVisibility(deleteForm "show")
+\a nrResizeWindow(deleteForm list(488 226 627 425))
+\a nrSetCurrentWindow(deleteForm)
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(642 353 268 91))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting view "symbol" from cell "PWL0" in library "VerilogA".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(667 372 268 133))
+\a nrSetCurrentWindow(workingDialogForm)
+\a cdsLibManager->viewLineEdit->value = "veriloga"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\o Deleted cellview 'VerilogA/PWL0/symbol'.
+\o Deletion of 1 view done.
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: LIB basic from File /home/saik/worklib_sky/cds.lib Line 3 redefines
+\w LIB basic from File /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\w Insert UNDEFINE basic
+\w before DEFINE basic
+\w     in /home/saik/worklib_sky/cds.lib
+\w Or remove or comment out DEFINE basic
+\w     in /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB analogLib from File /home/saik/worklib_sky/cds.lib Line 4 redefines
+\w LIB analogLib from File /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\w Insert UNDEFINE analogLib
+\w before DEFINE analogLib
+\w     in /home/saik/worklib_sky/cds.lib
+\w Or remove or comment out DEFINE analogLib
+\w     in /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB connectLib from File /home/saik/worklib_sky/cds.lib Line 5 redefines
+\w LIB connectLib from File /opt/Cadence_Installs/INCISIVE152/tools.lnx86/affirma_ams/etc/connect_lib/cds.lib
+\w Insert UNDEFINE connectLib
+\w before DEFINE connectLib
+\w     in /home/saik/worklib_sky/cds.lib
+\w Or remove or comment out DEFINE connectLib
+\w     in /opt/Cadence_Installs/INCISIVE152/tools.lnx86/affirma_ams/etc/connect_lib/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB analogLib from File /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib Line 1 redefines
+\w LIB analogLib from File /home/saik/worklib_sky/cds.lib
+\w Insert UNDEFINE analogLib
+\w before DEFINE analogLib
+\w     in /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib
+\w Or remove or comment out DEFINE analogLib
+\w     in /home/saik/worklib_sky/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB basic from File /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib Line 2 redefines
+\w LIB basic from File /home/saik/worklib_sky/cds.lib
+\w Insert UNDEFINE basic
+\w before DEFINE basic
+\w     in /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib
+\w Or remove or comment out DEFINE basic
+\w     in /home/saik/worklib_sky/cds.lib
+\w to suppress this warning message.
+\w Warning: The directory: '/home/saik/worklib_sky/$AMSHOME/tools/affirma_ams/etc/connect_lib/connectLib' does not exist
+\w 	but was defined in libFile '/home/saik/worklib_sky/cds.lib' for Lib 'connectLib'.
+\a cdsLibManager->libListBox->value = "VerilogA"
+\a cdsLibManager->libLineEdit->value = "VerilogA"
+\a cdsLibManager->cellListBox->value = "PWL0"
+\a cdsLibManager->cellLineEdit->value = "PWL0"
+\a cdsLibManager->viewListBox->value = "veriloga"
+\a cdsLibManager->viewLineEdit->value = "veriloga"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "veriloga"
+\a cdsLibManager->viewLineEdit->value = "veriloga"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a workingDialogForm->Close->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrResizeWindow(cdsLibManager list(0 0 1604 881))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: LIB basic from File /home/saik/worklib_sky/cds.lib Line 3 redefines
+\w LIB basic from File /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\w Insert UNDEFINE basic
+\w before DEFINE basic
+\w     in /home/saik/worklib_sky/cds.lib
+\w Or remove or comment out DEFINE basic
+\w     in /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB analogLib from File /home/saik/worklib_sky/cds.lib Line 4 redefines
+\w LIB analogLib from File /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\w Insert UNDEFINE analogLib
+\w before DEFINE analogLib
+\w     in /home/saik/worklib_sky/cds.lib
+\w Or remove or comment out DEFINE analogLib
+\w     in /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB connectLib from File /home/saik/worklib_sky/cds.lib Line 5 redefines
+\w LIB connectLib from File /opt/Cadence_Installs/INCISIVE152/tools.lnx86/affirma_ams/etc/connect_lib/cds.lib
+\w Insert UNDEFINE connectLib
+\w before DEFINE connectLib
+\w     in /home/saik/worklib_sky/cds.lib
+\w Or remove or comment out DEFINE connectLib
+\w     in /opt/Cadence_Installs/INCISIVE152/tools.lnx86/affirma_ams/etc/connect_lib/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB analogLib from File /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib Line 1 redefines
+\w LIB analogLib from File /home/saik/worklib_sky/cds.lib
+\w Insert UNDEFINE analogLib
+\w before DEFINE analogLib
+\w     in /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib
+\w Or remove or comment out DEFINE analogLib
+\w     in /home/saik/worklib_sky/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB basic from File /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib Line 2 redefines
+\w LIB basic from File /home/saik/worklib_sky/cds.lib
+\w Insert UNDEFINE basic
+\w before DEFINE basic
+\w     in /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib
+\w Or remove or comment out DEFINE basic
+\w     in /home/saik/worklib_sky/cds.lib
+\w to suppress this warning message.
+\w Warning: The directory: '/home/saik/worklib_sky/$AMSHOME/tools/affirma_ams/etc/connect_lib/connectLib' does not exist
+\w 	but was defined in libFile '/home/saik/worklib_sky/cds.lib' for Lib 'connectLib'.
+\a cdsLibManager->libListBox->value = "VerilogA"
+\a cdsLibManager->libLineEdit->value = "VerilogA"
+\a cdsLibManager->cellListBox->value = "PWL0"
+\a cdsLibManager->cellLineEdit->value = "PWL0"
+\a cdsLibManager->viewListBox->value = "veriloga"
+\a cdsLibManager->viewLineEdit->value = "veriloga"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "veriloga"
+\a cdsLibManager->viewLineEdit->value = "veriloga"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: LIB basic from File /home/saik/worklib_sky/cds.lib Line 3 redefines
+\w LIB basic from File /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\w Insert UNDEFINE basic
+\w before DEFINE basic
+\w     in /home/saik/worklib_sky/cds.lib
+\w Or remove or comment out DEFINE basic
+\w     in /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB analogLib from File /home/saik/worklib_sky/cds.lib Line 4 redefines
+\w LIB analogLib from File /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\w Insert UNDEFINE analogLib
+\w before DEFINE analogLib
+\w     in /home/saik/worklib_sky/cds.lib
+\w Or remove or comment out DEFINE analogLib
+\w     in /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB connectLib from File /home/saik/worklib_sky/cds.lib Line 5 redefines
+\w LIB connectLib from File /opt/Cadence_Installs/INCISIVE152/tools.lnx86/affirma_ams/etc/connect_lib/cds.lib
+\w Insert UNDEFINE connectLib
+\w before DEFINE connectLib
+\w     in /home/saik/worklib_sky/cds.lib
+\w Or remove or comment out DEFINE connectLib
+\w     in /opt/Cadence_Installs/INCISIVE152/tools.lnx86/affirma_ams/etc/connect_lib/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB analogLib from File /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib Line 1 redefines
+\w LIB analogLib from File /home/saik/worklib_sky/cds.lib
+\w Insert UNDEFINE analogLib
+\w before DEFINE analogLib
+\w     in /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib
+\w Or remove or comment out DEFINE analogLib
+\w     in /home/saik/worklib_sky/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB basic from File /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib Line 2 redefines
+\w LIB basic from File /home/saik/worklib_sky/cds.lib
+\w Insert UNDEFINE basic
+\w before DEFINE basic
+\w     in /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib
+\w Or remove or comment out DEFINE basic
+\w     in /home/saik/worklib_sky/cds.lib
+\w to suppress this warning message.
+\w Warning: The directory: '/home/saik/worklib_sky/$AMSHOME/tools/affirma_ams/etc/connect_lib/connectLib' does not exist
+\w 	but was defined in libFile '/home/saik/worklib_sky/cds.lib' for Lib 'connectLib'.
+\a cdsLibManager->libListBox->value = "VerilogA"
+\a cdsLibManager->libLineEdit->value = "VerilogA"
+\a cdsLibManager->cellListBox->value = "PWL0"
+\a cdsLibManager->cellLineEdit->value = "PWL0"
+\a cdsLibManager->viewListBox->value = "veriloga"
+\a cdsLibManager->viewLineEdit->value = "veriloga"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "veriloga"
+\a cdsLibManager->viewLineEdit->value = "veriloga"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: LIB basic from File /home/saik/worklib_sky/cds.lib Line 3 redefines
+\w LIB basic from File /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\w Insert UNDEFINE basic
+\w before DEFINE basic
+\w     in /home/saik/worklib_sky/cds.lib
+\w Or remove or comment out DEFINE basic
+\w     in /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB analogLib from File /home/saik/worklib_sky/cds.lib Line 4 redefines
+\w LIB analogLib from File /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\w Insert UNDEFINE analogLib
+\w before DEFINE analogLib
+\w     in /home/saik/worklib_sky/cds.lib
+\w Or remove or comment out DEFINE analogLib
+\w     in /opt/Cadence_Installs/IC618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB connectLib from File /home/saik/worklib_sky/cds.lib Line 5 redefines
+\w LIB connectLib from File /opt/Cadence_Installs/INCISIVE152/tools.lnx86/affirma_ams/etc/connect_lib/cds.lib
+\w Insert UNDEFINE connectLib
+\w before DEFINE connectLib
+\w     in /home/saik/worklib_sky/cds.lib
+\w Or remove or comment out DEFINE connectLib
+\w     in /opt/Cadence_Installs/INCISIVE152/tools.lnx86/affirma_ams/etc/connect_lib/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB analogLib from File /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib Line 1 redefines
+\w LIB analogLib from File /home/saik/worklib_sky/cds.lib
+\w Insert UNDEFINE analogLib
+\w before DEFINE analogLib
+\w     in /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib
+\w Or remove or comment out DEFINE analogLib
+\w     in /home/saik/worklib_sky/cds.lib
+\w to suppress this warning message.
+\w Warning: LIB basic from File /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib Line 2 redefines
+\w LIB basic from File /home/saik/worklib_sky/cds.lib
+\w Insert UNDEFINE basic
+\w before DEFINE basic
+\w     in /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib
+\w Or remove or comment out DEFINE basic
+\w     in /home/saik/worklib_sky/cds.lib
+\w to suppress this warning message.
+\w Warning: The directory: '/home/saik/worklib_sky/$AMSHOME/tools/affirma_ams/etc/connect_lib/connectLib' does not exist
+\w 	but was defined in libFile '/home/saik/worklib_sky/cds.lib' for Lib 'connectLib'.
+\a cdsLibManager->libListBox->value = "VerilogA"
+\a cdsLibManager->libLineEdit->value = "VerilogA"
+\a cdsLibManager->cellListBox->value = "PWL0"
+\a cdsLibManager->cellLineEdit->value = "PWL0"
+\a cdsLibManager->viewListBox->value = "veriloga"
+\a cdsLibManager->viewLineEdit->value = "veriloga"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "veriloga"
+\a cdsLibManager->viewLineEdit->value = "veriloga"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(9 38 1604 881))
+\a cdsLibManager->fileExitButton->value = t
+\o libManager is exiting.
+\a exit(0)

@@ -1,0 +1,26 @@
+Reading file: 
+        /home/saik/worklib_sky/reram/VerilogA/Data_Voltage/veriloga/veriloga.va
+Reading file: 
+        /opt/Cadence_Installs/SPECTRE211/tools.lnx86/spectre/etc/ahdl/constants.vams
+Reading file: 
+        /opt/Cadence_Installs/SPECTRE211/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+
+Error found by spectre during AHDL compile.
+    ERROR (VACOMP-1563): "D_p[i] = (binary_data_array[i] >> 1) & 1;<<--?  //
+        Assign bits to D_p"
+        "/home/saik/worklib_sky/reram/VerilogA/Data_Voltage/veriloga/veriloga.va",
+        line 285: Encountered invalid type conversion for `D_p' (`integer' to
+        `node'). Check the validity of conversion and try again.
+    ERROR (VACOMP-1564):
+        "/home/saik/worklib_sky/reram/VerilogA/Data_Voltage/veriloga/veriloga.va",
+        line 285: Encountered assignment to `D_p', which is of type node. Use a
+        contribution operator instead of an assignment.
+    ERROR (VACOMP-1563): "D_n[i] = (binary_data_array[i] >> 0) & 1;<<--?  //
+        Assign bits to D_n"
+        "/home/saik/worklib_sky/reram/VerilogA/Data_Voltage/veriloga/veriloga.va",
+        line 286: Encountered invalid type conversion for `D_n' (`integer' to
+        `node'). Check the validity of conversion and try again.
+    ERROR (VACOMP-1564):
+        "/home/saik/worklib_sky/reram/VerilogA/Data_Voltage/veriloga/veriloga.va",
+        line 286: Encountered assignment to `D_n', which is of type node. Use a
+        contribution operator instead of an assignment.

@@ -1,0 +1,14 @@
+Reading file: 
+        /home/saik/worklib_sky/reram/VerilogA/Practice/veriloga/veriloga.va
+Reading file: 
+        /opt/Cadence_Installs/SPECTRE211/tools.lnx86/spectre/etc/ahdl/constants.vams
+Reading file: 
+        /opt/Cadence_Installs/SPECTRE211/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+
+Error found by spectre during AHDL compile.
+    ERROR (VACOMP-2032):
+        "/home/saik/worklib_sky/reram/VerilogA/Practice/veriloga/veriloga.va",
+        line 229: The range specifications in the two declarations of the port
+        'data' have different size, direction, or index. Provide the same range
+        specification and rerun the simulation.
+    ERROR (VACOMP-1816): Exiting AHDL compilation.

@@ -1,0 +1,2 @@
+SELECT timeout fd=15 rc=0 net_errno=0 remain_time=0 timeout=10 total_read=0
+ MSGID MISMATCH - CMD 326 - Expected MsgId = 1737988682 - Received MsgId = 1737988681 . 

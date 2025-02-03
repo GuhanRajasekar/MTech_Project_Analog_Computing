@@ -1,0 +1,23 @@
+SOFTINCLUDE	/opt/Cadence_Installs/IC618/share/cdssetup/cds.lib
+SOFTINCLUDE 	/opt/Cadence_Installs/INCISIVE152/tools.lnx86/inca/files/cds.lib
+DEFINE basic 	$CDSHOME/tools/dfII/etc/cdslib/basic 
+DEFINE analogLib	$CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+DEFINE connectLib	$AMSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+DEFINE sample	/opt/Cadence_Installs/IC618/tools.lnx86/dfII/samples/cdslib/sample
+
+
+#-----------------------
+# Skywater TechLibrary:
+#-----------------------
+#SOFTINCLUDE	/opt/Cadence_Installs/PDKs/Skywater/S130_V2.1.306/LIBS/cds.lib
+SOFTINCLUDE     /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib
+
+#-----------------------
+# ASAP7 TechLibrary:
+#-----------------------
+#DEFINE asap7_TechLib /opt/Cadence_Installs/PDKs/ASAP7/ASAP7_PDKandLIB_v1p6/asap7PDK_r1p7/cdslib/asap7_TechLib_10
+#DEFINE asap7ssc7p5t /opt/Cadence_Installs/PDKs/ASAP7/ASAP7_PDKandLIB_v1p6/asap7PDK_r1p7/asap7ssc7p5t_05/
+#DEFINE Std_cell /opt/Cadence_Installs/PDKs/ASAP7/ASAP7_PDKandLIB_v1p6/asap7PDK_r1p6/cdslib/Std_cellDEFINE reram /home/saik/worklib_sky/reram
+DEFINE sai /home/saik/worklib_sky/reram/sai
+DEFINE avTech /opt/Cadence_Installs/ASSURA618/tools.lnx86/assura/etc/avtech/avTech
+DEFINE VerilogA /home/saik/worklib_sky/reram/VerilogA

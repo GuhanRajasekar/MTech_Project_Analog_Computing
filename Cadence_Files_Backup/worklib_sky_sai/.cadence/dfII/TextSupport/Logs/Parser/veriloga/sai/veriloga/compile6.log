@@ -1,0 +1,41 @@
+Reading file:  /home/saik/worklib_sky/reram/sai/data_read/veriloga/veriloga.va
+Reading file: 
+        /opt/Cadence_Installs/SPECTRE211/tools.lnx86/spectre/etc/ahdl/constants.vams
+Reading file: 
+        /opt/Cadence_Installs/SPECTRE211/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+
+Error found by spectre during AHDL compile.
+    ERROR (VACOMP-2212): "captured_data =<<--? 
+        $fscanf(fileHandle,"%d",count_val);"
+        "/home/saik/worklib_sky/reram/sai/data_read/veriloga/veriloga.va", line
+        28: Encountered undeclared identifier: captured_data. Declare the
+        identifier before using it.
+    ERROR (VACOMP-2212):
+        "/home/saik/worklib_sky/reram/sai/data_read/veriloga/veriloga.va", line
+        28: Encountered undeclared identifier: fileHandle. Declare the
+        identifier before using it.
+    ERROR (VACOMP-2212):
+        "/home/saik/worklib_sky/reram/sai/data_read/veriloga/veriloga.va", line
+        28: Encountered undeclared identifier: count_val. Declare the
+        identifier before using it.
+    ERROR (VACOMP-1298):
+        "/home/saik/worklib_sky/reram/sai/data_read/veriloga/veriloga.va", line
+        28: First argument of file access function is not an integer. Specify
+        an integer handle as the first argument.
+    ERROR (VACOMP-1299):
+        "/home/saik/worklib_sky/reram/sai/data_read/veriloga/veriloga.va", line
+        28: Missing or unrecognized format string in $fscanf. Specify a format
+        string as the second argument.
+    ERROR (VACOMP-2212): "$strobe("Count value Value = %d\n",count_val)<<--?
+        ;"
+        "/home/saik/worklib_sky/reram/sai/data_read/veriloga/veriloga.va", line
+        29: Encountered undeclared identifier: count_val. Declare the
+        identifier before using it.
+    ERROR (VACOMP-1277):
+        "/home/saik/worklib_sky/reram/sai/data_read/veriloga/veriloga.va", line
+        29: Number of arguments does not match number of conversion characters.
+        Missing argument for %d in argument #1, which must be an integer.
+    ERROR (VACOMP-2212): "flag =<<--?  0;"
+        "/home/saik/worklib_sky/reram/sai/data_read/veriloga/veriloga.va", line
+        30: Encountered undeclared identifier: flag. Declare the identifier
+        before using it.

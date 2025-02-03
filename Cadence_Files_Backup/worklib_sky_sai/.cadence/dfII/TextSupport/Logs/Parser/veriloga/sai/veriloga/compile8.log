@@ -1,0 +1,16 @@
+Reading file: 
+        /home/saik/worklib_sky/reram/sai/data1_read/veriloga/veriloga.va
+Reading file: 
+        /opt/Cadence_Installs/SPECTRE211/tools.lnx86/spectre/etc/ahdl/constants.vams
+Reading file: 
+        /opt/Cadence_Installs/SPECTRE211/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+
+Warning from spectre during AHDL compile.
+    WARNING (VACOMP-1146):
+        "/home/saik/worklib_sky/reram/sai/data1_read/veriloga/veriloga.va",
+        line 12: (Non-portable Syntax) Cadence strongly recommends putting the
+        direction specifier for port `D_p' before declaring its discipline.
+    WARNING (VACOMP-1146):
+        "/home/saik/worklib_sky/reram/sai/data1_read/veriloga/veriloga.va",
+        line 12: (Non-portable Syntax) Cadence strongly recommends putting the
+        direction specifier for port `D_n' before declaring its discipline.

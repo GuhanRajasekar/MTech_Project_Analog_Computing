@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("VerilogA" "test1" "schematic" "spectre")
+descriptionText = "None"
