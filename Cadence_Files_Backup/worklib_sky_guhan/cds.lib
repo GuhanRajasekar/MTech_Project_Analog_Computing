@@ -12,12 +12,24 @@ DEFINE sample	/opt/Cadence_Installs/IC618/tools.lnx86/dfII/samples/cdslib/sample
 #SOFTINCLUDE	/opt/Cadence_Installs/PDKs/Skywater/S130_V2.1.306/LIBS/cds.lib
 SOFTINCLUDE     /opt/Cadence_Installs/PDKs/SKY130/sky130_release_0.0.4/cds.lib
 
+#SOFTINCLUDE /opt/Cadence_Installs/PDKs/TSMCN65GP/cds.lib
+
 #-----------------------
 # ASAP7 TechLibrary:
 #-----------------------
 #DEFINE asap7_TechLib /opt/Cadence_Installs/PDKs/ASAP7/ASAP7_PDKandLIB_v1p6/asap7PDK_r1p7/cdslib/asap7_TechLib_10
 #DEFINE asap7ssc7p5t /opt/Cadence_Installs/PDKs/ASAP7/ASAP7_PDKandLIB_v1p6/asap7PDK_r1p7/asap7ssc7p5t_05/
 #DEFINE Std_cell /opt/Cadence_Installs/PDKs/ASAP7/ASAP7_PDKandLIB_v1p6/asap7PDK_r1p6/cdslib/Std_cellDEFINE reram_test /home/guhanr/worklib_sky/reram_test
-DEFINE reram_test /home/guhanr/worklib_sky/reram_test
+#Removed by ddDeleteObj: DEFINE reram_test /home/guhanr/worklib_sky/reram_test
 DEFINE Keyword_Classifier_NN /home/guhanr/worklib_sky/Keyword_Classifier_NN
 DEFINE Current_Mirror_Testing /home/guhanr/worklib_sky/Current_Mirror_Testing
+#Removed by ddDeleteObj: DEFINE Saptarshi_DAC /home/guhanr/worklib_sky/Saptarshi_DAC
+#Removed by ddDeleteObj: DEFINE Saptarshi_DAC /home/guhanr/worklib_sky/Saptarshi_DAC
+DEFINE Saptarshi_DAC /home/guhanr/worklib_sky/Saptarshi_DAC
+DEFINE Guhan_DAC /home/guhanr/worklib_sky/Guhan_DAC
+#Removed by ddDeleteObj: DEFINE Guhan_DAC_02 /home/guhanr/worklib_sky/Guhan_DAC_02
+#Removed by ddDeleteObj: DEFINE Re_Ram_Krishna /home/guhanr/worklib_sky/Re_Ram_Krishna
+#Removed by ddDeleteObj: DEFINE Re_RAM_Krishna /home/guhanr/worklib_sky/Re_RAM_Krishna
+#Removed by ddDeleteObj: DEFINE Re_Ram_Krishna /home/guhanr/worklib_sky/Re_Ram_Krishna
+DEFINE ReRam_Krishna /home/guhanr/worklib_sky/ReRam_Krishna
+DEFINE Debug_Playground /home/guhanr/worklib_sky/Debug_Playground
