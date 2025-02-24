@@ -34,3 +34,14 @@ DEFINE Guhan_DAC /home/guhanr/worklib_sky/Guhan_DAC
 DEFINE ReRam_Krishna /home/guhanr/worklib_sky/ReRam_Krishna
 DEFINE Debug_Playground /home/guhanr/worklib_sky/Debug_Playground
 DEFINE Practise_Playground /home/guhanr/worklib_sky/Practise_Playground
+#Removed by ddDeleteObj: DEFINE ReRam_Krishna_Version_01 /home/guhanr/worklib_sky/ReRam_Krishna_Version_01
+DEFINE ReRam_Krishna_Version_02 /home/guhanr/worklib_sky/ReRam_Krishna_Version_02
+#Removed by ddDeleteObj: DEFINE layer1_weights /home/guhanr/worklib_sky/layer1_weights
+DEFINE Layer1_weights /home/guhanr/worklib_sky/Layer1_weights
+DEFINE Layer2_weights /home/guhanr/worklib_sky/Layer2_weights
+#Removed by ddDeleteObj: DEFINE Commoon_Weights_Processing_Unit /home/guhanr/worklib_sky/Commoon_Weights_Processing_Unit
+#Removed by ddDeleteObj: DEFINE Common_Weights_Processing_Unit /home/guhanr/worklib_sky/Common_Weights_Processing_Unit
+DEFINE Layer1_Weights_Processing /home/guhanr/worklib_sky/Layer1_Weights_Processing
+DEFINE Layer1_Weights_Processing_Testing /home/guhanr/worklib_sky/Layer1_Weights_Processing_Testing
+DEFINE Layer2_Weights_Processing /home/guhanr/worklib_sky/Layer2_Weights_Processing
+DEFINE Layer1_Dummy_Processing /home/guhanr/worklib_sky/Layer1_Dummy_Processing

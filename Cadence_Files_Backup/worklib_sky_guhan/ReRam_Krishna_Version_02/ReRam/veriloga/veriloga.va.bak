@@ -1,0 +1,9 @@
+// VerilogA for Krishna, ReRam, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module ReRam;
+
+
+endmodule

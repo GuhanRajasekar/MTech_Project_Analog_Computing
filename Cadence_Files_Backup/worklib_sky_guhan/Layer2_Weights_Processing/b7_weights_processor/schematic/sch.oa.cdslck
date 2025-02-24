@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      guhanr
+HostName                       neuronics.c2sCAT1MEITY.iisc.ac.in
+ProcessIdentifier              40178
+ProcessCreationTime_UTC        1740283428
+ProcessCreationTime_Readable   Sun Feb 23 09:33:48 2025 IST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/guhanr/worklib_sky/Layer2_Weights_Processing/b7_weights_processor/schematic/sch.oa.cdslck
+TimeEditLocked                 Sun Feb 23 10:18:04 2025 IST

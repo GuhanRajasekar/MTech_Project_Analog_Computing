@@ -1,0 +1,24 @@
+// VerilogA for Krishna, PWL_2, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module Dummy_PWL(Data_in, Bit, Bit_bar);
+  input Data_in;               // Declare input signal
+  output Bit, Bit_bar;             // Declare output signal
+  electrical Data_in, Bit, Bit_bar;     // Declare electrical nodes for input and output
+
+real data;   // Declare data at input node
+analog begin 
+	data = V(Data_in);
+	if (data == 1) begin		//assign output signals based on input
+		V(Bit) <+ 1.8;
+		V(Bit_bar) <+ 0;
+		end
+	else begin 
+		V(Bit) <+ 0;
+		V(Bit_bar) <+ 1.8;	
+		end
+end
+
+endmodule
